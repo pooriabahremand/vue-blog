@@ -1,10 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <AddBlogComponent />
+  </div>
 </template>
 
 <script>
+import AddBlogComponent from "./components/AddBlog.vue";
+
 export default {
-  components: {},
+  components: {
+    AddBlogComponent,
+  },
 
   data() {
     return {};
