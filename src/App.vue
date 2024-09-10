@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
-    <AddBlogComponent />
-  </div>
+  <nav>
+    <HeaderComponent />
+    <router-view></router-view>
+  </nav>
 </template>
 
 <script>
-import AddBlogComponent from "./components/AddBlog.vue";
-
+import HeaderComponent from "./components/Header.vue";
 export default {
-  components: {
-    AddBlogComponent,
-  },
-
+  components: { HeaderComponent },
   data() {
     return {};
   },
